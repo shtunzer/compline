@@ -22,10 +22,15 @@
                         <li class="header__list-item"><a href="#" class="header__list-link">Главная</a></li>
                         <li class="header__list-item"><a href="#" class="header__list-link">Курсы</a></li>
                         <li class="header__list-item"><a href="#" class="header__list-link">Расписание</a></li>
-                        <li class="header__list-item"><a href="#" class="header__list-link">Преподаватели</a></li>
-                        <li class="header__list-item"><a href="#" class="header__list-link">Рассылка</a></li>
+                        <li class="header__list-item"><button class="header__list-link scrollTo1">Преподаватели</button></li>
+                        <li class="header__list-item"><button class="header__list-link scrollTo2">Рассылка</button></li>
                         <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
                     </ul>
+                    <button id="burgerMenu__btn-open" class="header__burger-btn">
+                        <span class="burger-span"></span>
+                        <span class="burger-span"></span>
+                        <span class="burger-span"></span>
+                    </button>
                     <button class="header__btn">Зайти в кабинет</button>
                 </div>
             </div>
@@ -249,7 +254,7 @@
                     </div>
                 </div>
             </section>
-            <section class="teachers">
+            <section id="teachers" class="teachers">
                 <div class="container">
                     <div class="teachers__inner">
                         <div class="teachers__titleBox">
@@ -279,8 +284,23 @@
                     </div>
                 </div>
             </section>
+            <section id="burger__menu" class="burger__menu">
+                <div class="container">
+                    <div class="burger__inner">
+                        <button id="burgerMenu__btn-hide" class="burger__menu-btn"><img src="assets/images/close-bg.svg" class="burger__menu-btn-img"></button>
+                        <ul class="burger__list">
+                            <a href="#" class="burger__menu-link">Главная</a>
+                            <a href="#" class="burger__menu-link">Курсы</a>
+                            <a href="#" class="burger__menu-link">Расписание</a>
+                            <button class="burger__menu-link scrollTo3">Преподаватели</button>
+                            <button class="burger__menu-link scrollTo4">Рассылка</button>
+                            <a href="#" class="burger__menu-link">Контакты</a>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer">
+        <footer id="form" class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <h2 class="footer-title">Статьи каждую неделю</h2>
