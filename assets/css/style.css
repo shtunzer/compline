@@ -18,7 +18,7 @@ html,body{
 }
 
 body{
-    background: url(../images/bgc.jpg);
+    background: #121212;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,6 +37,7 @@ button{
     border: none;
     background: transparent;
     color: inherit;
+    cursor: pointer;
 }
 
 .container{
@@ -89,6 +90,61 @@ button{
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+}
+
+/* BURGER MENU */
+
+.header__burger-btn{
+    display: none;
+    cursor: pointer;
+}
+
+.burger-span{
+    width: 36px;
+    height: 2px;
+    background: #7C6AFA;
+    display: block;
+}
+
+.burger-span + .burger-span{
+    margin-top: 8px;
+}
+
+.burger__menu{
+    height: 100vh;
+    width: 300px;
+    background: #121212;
+    margin-left: auto;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: all .3s linear;
+    transform: translatex(100%);
+    background-color: #141414;
+}
+
+
+.burger__menu-btn{
+    margin: 0 auto;
+    margin-top: 80px;
+    display: block;
+}
+
+.burger__menu-link{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.burger__list{
+    margin-top: 120px;
+}
+
+.burger__menu.--show{
+    transform: translatex(0%);
 }
 
 /* FIRST SCREEN */
@@ -272,10 +328,13 @@ button{
 .start__learn{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    max-width: 1203px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .start__learn-card{
-    margin-top: 80px;
+    width: 306px;
 }
 
 .start__learn-card-title{
@@ -286,7 +345,7 @@ button{
 }
 
 .start__learn-card-decoration{
-    width: 324px;
+    width: 306px;
 }
 
 .start__learn-card-decoration-1,
@@ -411,7 +470,7 @@ button{
 }
 
 .partners-card-img{
-    margin: 28px 66px;
+    margin: 28px auto;
     display: block;
 }
 
@@ -447,7 +506,7 @@ button{
 .program__progresBox{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 690px;
+    max-width: 69   0px;
     margin: 0 auto;
 }
 
@@ -650,4 +709,291 @@ button{
     line-height: 160%;
     text-align: center;
     opacity: 0.8;
+}
+
+/* MEDIA */
+
+@media (max-width: 1334px){
+    .teachers__titleBox-img,
+    .partners__titleBox-img,
+    .start__titleBox-img{
+        margin-left: 0;
+    }
+    .last-line__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lastLine-link{
+        max-width: 169px;
+    }
+}
+
+@media (max-width: 1290px){
+    .start__learn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 612px;
+    }
+    .start__learn-card + .start__learn-card + .start__learn-card{
+        margin-top: 40px;
+    }
+    .teachers-card{
+        margin: 0 auto;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 1174px){
+    .earned{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1130px){
+    .aboutUs__textBox{
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1040px){
+    .aboutUs__textBox-title{
+        font-size: 35px;
+    }
+    .aboutUs__textBox{
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 1100px){
+    .header__list{
+        display: none;
+    }
+    .header__burger-btn{
+        display: block;
+    }
+}
+
+@media (max-width: 960px){
+    .aboutUs__inner{
+        display: block;
+    }
+    .aboutUs__textBox{
+        max-width: 536px;
+        margin: 0 auto;
+    }
+    .aboutUs__textBox-title{
+        font-size: 48px;
+    }
+    .aboutUs-img{
+        margin: 0 auto;
+        display: block;
+    }
+    .partners__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partners-line1{
+        border: none;
+    }
+    .partners-line2{
+        border: none;
+    }
+    .partners-line1 + .partners-line1{
+        border: none;
+    }
+    .partners-line2 + .partners-line2{
+        border: none;
+    }
+}
+
+@media (max-width: 880px){
+    .advantages__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advantages-card + .advantages-card{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 810px){
+    .firstScreen-title{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 750px){
+    .last-line-progresBox{
+        width: 550px;
+    }
+    .last-line-progres{
+        width: 246px;
+    }
+    .teachers__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .teachers-card{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 650px){
+    .start__learn-card-decoration,
+    .start__learn-card{
+        width: 220px;
+    }
+    .start__learn{
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 620px){
+    .firstScreen-title{
+        font-size: 32px;
+    }
+    .firstScreen__date + .firstScreen__date{
+        margin-left: 0;
+    }
+
+    .firstScreen__date + .firstScreen__date + .firstScreen__date{
+        margin-top: 20px;
+    }
+
+    .firstScreen__datebox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 580px){
+    .partners__titleBox-title,
+    .teachers__titleBox-title,
+    .start__titleBox-title{
+        font-size: 28px;
+    }
+    .aboutUs-img{
+        width: 450px;
+    }
+    .last-line-progresBox{
+        width: 450px;
+    }
+    .last-line-progres{
+        width: 186px;
+    }
+}
+
+@media (max-width: 530px){
+    .footer__form-input{
+        border-radius: 50px;
+        margin: 0 auto;
+        display: block;
+    }
+    .footer__form-submit{
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .program__progresBox-right-text,
+    .program__progresBox-left-text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 490px){
+    .aboutUs-img{
+        width: 340px;
+    }
+    .aboutUs__textBox-title{
+        font-size: 28px;
+    }
+    .aboutUs__textBox-text{
+        font-size: 14px;
+    }
+    .last-line-progresBox{
+        width: 330px;
+    }
+    .last-line-progres{
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px){
+    .start__learn{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 306px;
+        margin: 0 auto;
+    }
+    .start__learn-card-decoration{
+        width: 306px;
+    }
+    .start__learn-card-text{
+        width: 306px;
+    }
+    .start__learn-card{
+        margin-top: 20px;
+    }
+    .partners__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 460px){
+    .students{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 430px){
+    .firstScreen-title{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 410px){
+    .partners__titleBox-img,
+    .program-img,
+    .teachers__titleBox-img,
+    .start__titleBox-img{
+        display: none;
+    }
+    .partners__titleBox-title,
+    .start__titleBox-title,
+    .teachers__titleBox-title{
+        margin-left: 0;
+    }
+    .advantages-title,
+    .program-title,
+    .footer-title{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 400px){
+    .footer__form-input{
+        max-width: 300px;
+    }
+    .aboutUs-img{
+        width: 290px;
+    }
+}
+
+@media (max-width: 380px){
+    .line-left,
+    .line-right{
+        width: 20px;
+    }
+    .program__progresBox-centerBox{
+        max-width: 46px;
+    }
+}
+
+@media (max-width: 360px){
+    .last-line-progresBox{
+        width: 300px;
+    }
+    .last-line-progres{
+        width: 130px;
+    }
 }
