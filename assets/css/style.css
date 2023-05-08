@@ -154,7 +154,6 @@ button{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .firstScreen__inner{
@@ -859,9 +858,6 @@ button{
         grid-template-columns: repeat(2, 1fr);
         max-width: 260px;
     }
-    .aboutUs__inner{
-        padding-top: 300px;
-    }
 }
 
 @media (max-width: 580px){
@@ -942,12 +938,6 @@ button{
 @media (max-width: 460px){
     .students{
         margin-top: 30px;
-    }
-}
-
-@media (max-width: 443px){
-    .aboutUs__inner{
-        padding-top: 340px;
     }
 }
 
