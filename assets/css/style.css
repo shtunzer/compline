@@ -196,11 +196,8 @@ button{
 .last-line{
     padding: 36px 0;
     background: #121212;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
+    margin-top: 229px;
 }
 
 .lastLine-link{
@@ -862,6 +859,9 @@ button{
         grid-template-columns: repeat(2, 1fr);
         max-width: 260px;
     }
+    .aboutUs__inner{
+        padding-top: 300px;
+    }
 }
 
 @media (max-width: 580px){
@@ -942,6 +942,12 @@ button{
 @media (max-width: 460px){
     .students{
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 443px){
+    .aboutUs__inner{
+        padding-top: 340px;
     }
 }
 
